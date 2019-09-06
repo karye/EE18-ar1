@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Cookie|Dancing+Script&display=swap');
+body {
+    background-image: url("./bilder/alex-block-ar9-UYZZmqs-unsplash.jpg");
+    background-size: contain;
+    background-attachment: fixed;
+}
+h1 {
+    color: #FFFFFF;
+    font-size: 100px;
+    font-family: 'Cookie', cursive;
+}
+h2 {
+    color: #FFFFFF;
+    font-size: 60px;
+    font-family: 'Cookie', cursive;
+}
+p {
+    color: #FFFFFF;
+    font-size: 30px;
+    font-family: 'Dancing Script', cursive;
+}
+a {
+    color: #FFFFFF;
+}
