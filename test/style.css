@@ -1,0 +1,19 @@
+table {
+    table-layout: fixed;
+    width: 600px;
+    border-collapse: collapse;
+    border: 3px solid purple;
+}
+caption {
+    background: url("./geographica40.jpg");
+    background-size: cover;
+    color: #FFF;
+    padding: 20px;
+}
+th {
+    background-color: #d6d6d6;
+    padding: 20px;
+}
+td {
+    padding: 20px;
+}
