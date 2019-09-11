@@ -3,8 +3,10 @@ body {
 
 }
 table {
-    width: 800px;
+    width: 1000px;
     background: #eeeeee;
+    border-spacing: 10px;
+    table-layout: fixed;
 }
 caption {
     font-family: 'Playfair Display', serif;
@@ -17,12 +19,21 @@ tr {
 }
 th {
     font-family: 'Crimson Pro', serif;
-    font-size: 30px;
+    font-size: 20px;
+    background-color: #DCD9D4; 
+ background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%); 
+ background-blend-mode: soft-light,screen;
+ padding: 10px;
 }
 td {
     font-family: 'Crimson Pro', serif;
     font-size: 20px;
+    background: #FFF;
+    padding: 15px;
+    border: 1px solid #cfcfcf;
+    border-radius: 5px;
 }
 img {
     width: 100%;
+    border-radius: 10px;
 }
