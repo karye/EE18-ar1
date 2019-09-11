@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Crimson+Pro|Playfair+Display&display=swap');
+body {
+
+}
+table {
+    width: 800px;
+    background: #eeeeee;
+}
+caption {
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    background-image: url("./bilder/bistro_green_800x600.jpg");
+    background-size: cover;
+}
+tr {
+    
+}
+th {
+    font-family: 'Crimson Pro', serif;
+    font-size: 30px;
+}
+td {
+    font-family: 'Crimson Pro', serif;
+    font-size: 20px;
+}
+img {
+    width: 100%;
+}
