@@ -1,0 +1,31 @@
+/* 
+https://www.ica.se/handla
+*/
+
+body {
+    background: #F9F5F5;
+}
+table {
+    font-family: sans-serif;
+    width: 700px;
+    border-collapse: collapse;
+    background: #FFF;
+    border: 2px solid #CCC;
+}
+thead {
+    background: red;
+    color: #FFF;
+}
+tr {
+    border: 1px solid #EEE;
+}
+th {
+    padding: 10px;
+}
+td {
+    padding: 10px;
+}
+tfoot {
+    font-weight: bold;
+    background: #f9f9f9;
+}
