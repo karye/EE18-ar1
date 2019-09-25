@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Audiowide&display=swap');
+body {
+    background: #000 url("./bilder/jorden.jpg") no-repeat fixed center bottom;
+    background-size: 400px;
+}
+h1 {
+    color: #FFF;
+    font: 80px 'Audiowide', cursive;
+    margin: 100px auto 0 auto;
+    width: 800px;
+    text-align: center;
+    background-color: #555a92;
+    border: 1px solid #FFF;
+    padding: 30px;
+}
+h2 {
+    color: #FFF;
+    font: 30px sans-serif;
+    margin: 50px auto 0 auto;
+    text-align: center;
+    background-color: #5656c3;
+    width: 800px;
+    border: 1px solid #FFF;
+    padding: 30px;
+}
