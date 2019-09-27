@@ -3,11 +3,28 @@ body {
     background-size: cover;
 }
 h1 {
-
+    font: 80px sans-serif;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 100px 0 0 100px;
 }
 h2 {
-
+    font: 40px sans-serif;
+    color: #FFF;
+    font-weight: bold;
+    margin: 50px 0 0 100px;
 }
 p {
-
+    font: 20px sans-serif;
+    color: #FFF;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 250px 0 0 700px;
+    border: 2px solid #FFF;
+    width: 200px;
+    background: #cc81df;
+    padding: 25px;
+    text-align: center;
+    border-radius: 10px;
 }
