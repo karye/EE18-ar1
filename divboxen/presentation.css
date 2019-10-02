@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Yanone+Kaffeesatz&display=swap');
+
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(182, 182, 182);
+}
+div {
+    width: 500px;
+    background: url("./bilder/photo-1534447677768-be436bb09401.jpg");
+    padding: 30px 30px 30px 300px;
+    height: 300px;
+    margin: 100px auto 0 auto;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px #000;
+}
+h1 {
+    font-family: 'Anton', sans-serif;
+    color: #FFF;
+}
+h2 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: #FFF;
+}
+p {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: #FFF;
+}
