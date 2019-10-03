@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One|Montserrat&display=swap');
+
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Utseende på sidan */
+body {
+    background: rgb(143, 143, 143);
+}
+.sidan {
+    font-family: 'Montserrat', sans-serif;
+    width: 700px;
+    background: rgb(221, 158, 158);
+    padding: 50px;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 50px #FFF;
+}
+h1 {
+    font: 80px 'Fredoka One', cursive;
+    text-align: center;
+    text-transform: uppercase;
+    color: bisque;
+    text-shadow: 3px 3px 10px #000;
+}
+
+/* Utseende på inläggen */
+.inlagg {
+    background: linear-gradient(90deg, rgba(99,94,187,1) 0%, rgba(86,190,84,1) 0%, rgba(238,209,8,1) 100%);
+    padding: 50px;
+    margin: 15px 0 15px 0;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px #000;
+}
+img {
+    width: 100%;
+}
+h2 {
+    font-family: 'Fredoka One', cursive;
+}
+.datum {
+
+}
+p {
+
+}
+
+/* Utseende på sidfoten */
+.sidfot {
+
+}
+.namn {
+
+}
