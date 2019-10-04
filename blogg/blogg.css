@@ -14,12 +14,12 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
 
 /* Utseende på sidan */
 body {
-    background: rgb(143, 143, 143);
+    background: #000000;
 }
 .sidan {
     font-family: 'Montserrat', sans-serif;
     width: 700px;
-    background: rgb(221, 158, 158);
+    background: #e7ecf3;
     padding: 50px;
     margin: 50px auto;
     border-radius: 10px;
@@ -29,35 +29,36 @@ h1 {
     font: 80px 'Fredoka One', cursive;
     text-align: center;
     text-transform: uppercase;
-    color: bisque;
+    color: rgb(255, 191, 113);
     text-shadow: 3px 3px 10px #000;
 }
 
 /* Utseende på inläggen */
 .inlagg {
-    background: linear-gradient(90deg, rgba(99,94,187,1) 0%, rgba(86,190,84,1) 0%, rgba(238,209,8,1) 100%);
+    background: linear-gradient(rgb(182, 219, 181) 0%, rgb(226, 221, 190) 100%);
     padding: 50px;
-    margin: 15px 0 15px 0;
+    margin: 25px 0;
     border-radius: 10px;
-    box-shadow: 3px 3px 10px #000;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.596);
 }
-img {
+.bild {
     width: 100%;
+    padding: 30px;
+    background: #FFF;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.158);
 }
 h2 {
     font-family: 'Fredoka One', cursive;
+    margin-top: 20px;
 }
 .datum {
-
+    color: #ff5151;
 }
 p {
-
+    margin: 10px 0;
 }
 
 /* Utseende på sidfoten */
-.sidfot {
-
-}
 .namn {
-
+    font-style: italic;
 }

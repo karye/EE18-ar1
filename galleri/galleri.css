@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Faster+One|Roboto+Slab&display=swap');
+
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Utseende på sidan */
+body {
+    background: url("./bilder/196_detail_as12-51-7507_orig.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+.kontainer {
+    font-family: 'Roboto Slab', serif;
+    background: #ffffffd0;
+    margin: auto;
+    width: 800px;
+    padding: 50px;
+}
+h1 {
+    font: 70px 'Faster One', cursive;
+    text-align: center;
+}
+.intro {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10px;
+    text-shadow: 1px 1px 1px #FFF;
+}
+
+/* Utseende på rutorna */
+.ruta {
+    background: #000;
+    color: #FFF;
+    padding: 50px;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+img {
+    width: 300px;
+    background: #FFF;
+    padding: 10px;
+}
+.bildtext {
+
+}
+
+/* Utseende på sidfoten */
+.kalla {
+
+}
