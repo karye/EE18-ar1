@@ -7,6 +7,18 @@ https://www.mathem.se/recept
 @import url('https://fonts.googleapis.com/css?family=Modak|Noto+Sans&display=swap');
 
 body {
+    background: #000;
+}
+.kontainer {
+    font-family: 'Roboto Slab', serif;
+    background: #ffffffd0;
+    margin: auto;
+    width: 800px;
+    padding: 50px;
+}
+h1 {
+    font: 70px 'Faster One', cursive;
+    text-align: center;
 }
 table {
     table-layout: fixed;

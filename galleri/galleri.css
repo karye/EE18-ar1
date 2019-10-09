@@ -12,6 +12,15 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
     padding: 0;
 }
 
+/* CSS clearfix mot box-kollaps */
+.clearfix:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
 /* Utseende på sidan */
 body {
     background: url("./bilder/196_detail_as12-51-7507_orig.jpg");
@@ -49,11 +58,22 @@ img {
     background: #FFF;
     padding: 10px;
 }
-.bildtext {
-
+.bildtext {}
+.vänster {
+    float: left;
+    margin-right: 20px;
+}
+.höger {
+    float: right;
+    margin-left: 20px;
+}
+.textHöger {
+    text-align: right;
+}
+hr {
+    clear: both;
+    visibility: hidden;
 }
 
 /* Utseende på sidfoten */
-.kalla {
-
-}
+.kalla {}
