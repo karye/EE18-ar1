@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Modak|PT+Sans&display=swap');
+
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Sidans färgpalett 
+$color1: rgba(91, 192, 235, 1);
+$color2: rgba(253, 231, 76, 1);
+$color3: rgba(155, 197, 61, 1);
+$color4: rgba(229, 89, 52, 1);
+$color5: rgba(250, 121, 33, 1); */
+
+/* Sidans utseende */
+body {
+    background: rgb(138, 138, 138);
+}
+.kontainer {
+    font-family: 'PT Sans', sans-serif;
+    width: 900px;
+    margin: 0 auto;
+    padding: 50px;
+    background: rgb(228, 227, 227);
+}
+.kontainer h1 {
+    font: 80px 'Modak', cursive;
+    text-align: center;
+    color: rgba(229, 90, 52, 0.74);
+}
+
+/* Menyns utseende */
+.kontainer .meny {
+    text-align: center;
+    margin: 10px 0 30px 0;
+}
+.kontainer .meny li {
+    list-style-type: none;
+    display: inline;
+}
+.kontainer .meny a {
+    background: rgba(91, 192, 235, 1);
+    padding: 7px;
+    margin: 0 3px;
+    color: #FFF;
+    text-decoration: none;
+    border-radius: 3px;
+    box-shadow: 3px 3px 0 #FFF;
+    width: 150px;
+    display: inline-block;
+}
+.kontainer .meny a:hover {
+    background: rgba(155, 197, 61, 1);
+}
+.kontainer .meny .aktiv {
+    background: rgba(155, 197, 61, 1);
+}
+
+/* Innehållets utseende */
+.kontainer h2 {
+    text-align: center;
+    font-size: 40px;
+    text-shadow: 1px 1px 1px #FFF;
+}
+.kontainer figure {
+    background: #FFF;
+    padding: 30px;
+    width: 500px;
+    border-radius: 5px;
+    margin: 20px auto;
+}
+.kontainer figure img {
+    width: 100%;
+}
+.kontainer p {
+    margin: 10px 0;
+}
+.kontainer .sidfot {
+    color: #555;
+    font-style: italic;
+}
+.kontainer .sidfot a {
+    color: rgba(91, 192, 235, 1);
+    text-decoration: none;
+    font-weight: bold;
+}
