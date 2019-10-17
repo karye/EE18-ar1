@@ -22,19 +22,17 @@ body {
     margin: 125px auto 0 auto;
     background: #F9F8F1;
     padding: 55px 30px;
+    text-align: center;
 }
 .kontainer .logga {
-    text-align: center;
-    
+    width: 150px;
 }
 .kontainer h1 {
-    text-align: center;
     font: 32px 'Slabo 13px', serif;
     font-weight: bold;
     text-transform: uppercase;
 }
 .kontainer .beskrivning {
-    text-align: center;
     margin: 30px 225px;
     font: 18px sans-serif;
 }
