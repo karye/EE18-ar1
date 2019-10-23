@@ -23,8 +23,10 @@ body {
 
 /* Sidhuvudets utseende */
 .kontainer .sidhuvud {
-    display: grid;
-    grid-template-columns: 25% 75%
+/*     display: grid;
+    grid-template-columns: 25% 75%; */
+    display: flex;
+    justify-content: space-between;
 }
 .kontainer .sidhuvud img {
     margin-left: 50px;
