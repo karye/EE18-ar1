@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Introduktion till Javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Introduktion till Javascript</h1>
+    </div>
+    <script>
+        /* Läs in namn */
+        var namn = prompt("Vad heter du?");
+
+        /* Byt ut bokstäver */
+        var nyttNamn = namn.replace('a', 'o').replace('i', 'y').replace('e', 'f');
+
+        /* Skriv ut resultat */
+        alert("Hej, ditt nya namn är " + nyttNamn);
+
+    </script>
+</body>
+</html>

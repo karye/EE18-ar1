@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Introduktion till Javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Introduktion till Javascript</h1>
+    </div>
+    <script>
+    /* Slumpa fram ett tal 1-10 */
+    var slumptal = Math.ceil(Math.random() * 10);
+    console.log("Slumptal = " + slumptal);
+    
+    /* Läs av gissning */
+    var gissning = prompt("Gissa ett tal 1-10");
+
+    /* Är gissning = slumptal? */
+    if (gissning == slumptal) {
+        /* Rätt svar! */
+        location.replace("https://www.youwin.com");
+    } else {
+        /* Fel svar! */
+        location.replace("http://lookwhogotbusted.com")
+    }
+    </script>
+</body>
+</html>
