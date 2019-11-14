@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Intro till Javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Intro till Javascript</h1>
+    <script>
+        /* Slumpa fram två tal 1-10 */
+        var tal1 = Math.ceil(Math.random() * 10);
+        var tal2 = Math.ceil(Math.random() * 10);
+
+        /* Räkna ut summa = tal1 + tal2 */
+        var summa = tal1 + tal2;
+
+        /* Läs in gissning */
+        var gissning = prompt("Vad är ")
+
+        /* Är gissning = summa ? */
+        if (gissning == summa) {
+            /* Rätt svar! */
+            alert("Rätt svar!")
+        } else {
+            /* Fel svar! */
+            alert("Fel svar!")
+        }
+    </script>
+</body>
+</html>
