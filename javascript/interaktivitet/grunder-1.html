@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Grunder i Javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Lyssna på knapphändelser</h1>
+
+        <button onclick="frågaNamn()">Ange Namn</button>
+        <button onclick="frågaÅlder()">Ange ålder</button>
+        <button onclick="frågaAdress()">Ange gatuadress</button>
+        <button onclick="sammanfattning()">Sammanfattning</button>
+    </div>
+    <script>
+        /* Deklarera variablerna */
+        var namn;
+        var ålder;
+        var adress
+
+        function frågaNamn() {
+            namn = prompt("Hej! Vad heter du?");
+            console.log(namn);
+        }
+        function frågaÅlder() {
+            ålder = prompt("Hej! Vad heter du?");
+            console.log(ålder);
+        }
+        function frågaAdress() {
+            adress = prompt("Hej! Vad heter du?");
+            console.log(adress);
+        }
+        function sammanfattning() {
+            alert("Hej! " + namn + ", du är " + ålder +  " gammal, och bor på " + adress);
+        }
+
+    </script>
+</body>
+</html>
