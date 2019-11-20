@@ -3,11 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Animera element på sidan</title>
-    <script src="//cdn.rawgit.com/gibbok/animatelo/1.0.3/dist/animatelo.min.js"></script>
+    <title>Arbeta med DOM</title>
     <link rel="stylesheet" href="../style/style.css">
 </head>
-<body onclick="prova()">
+<body>
     <div class="kontainer">
         <h1>I rörelse</h1>
         <p>Den mätta dagen, den är aldrig störst.<br>
@@ -22,22 +21,17 @@
             Oändligt är vårt stora äventyr.</p>
         <img src="../bilder/eld.jpg" alt="En eld">
 
-        <button onclick="jelloRubrik()">Jello på rubriken</button>
-        <button onclick="rubberBandText()">rubber på texten</button>
-        <button onclick="tadaBox()">tada på boxen</button>
+        <button onclick="mörkt()">Mörkt läge</button>
+        <button onclick="radera()">Nukem!</button>
     </div>
     <script>
-        function jelloRubrik() {
-            window.animatelo.jello("h1");
+        function mörkt() {
+            document.body.style.backgroundColor = "#000";
+            document.body.style.color = "green";
+            document.title = "Mörkt läge";
         }
-        function rubberBandText() {
-            window.animatelo.rubberBand("p");
-        }
-        function tadaBox() {
-            window.animatelo.tada(".kontainer");
-        }
-        function prova() {
-            window.animatelo.wobble("body");
+        function radera() {
+            document.body.innerHTML = '<img src="../bilder/duke-nukem.jpg" alt="Duke">';
         }
     </script>
 </body>

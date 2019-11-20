@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arbeta med DOM</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>I rörelse</h1>
+        <p id="p1">Den mätta dagen, den är aldrig störst.<br>
+            Den bästa dagen är en dag av törst.</p>
+        <p id="p2">Nog finns det mål och mening i vår färd -<br>
+            men det är vägen, som är mödan värd.</p>
+
+        <button onclick="stylaRubrik()">Styla rubriken</button>
+        <button onclick="stylaTexten()">Styla texten</button>
+    </div>
+    <script>
+        function stylaRubrik() {
+            /* Hitta elementet som är skapat av taggen <h1>  */
+            const elementH1 = document.querySelector("h1");
+
+            /* Ändra textfärg på elementet till röd */
+            elementH1.style.color = "red";
+
+            /* Ändra rubrikens textstorlek till 60px */
+            elementH1.style.fontSize = "60px";
+
+            /* Ändra typsnitt på rubriken till courier */
+            elementH1.style.fontFamily = "Courier";
+        }
+        function stylaTexten() {
+            /* Hitta elementet .... */
+            const elementP1 = document.querySelector("#p1");
+            const elementP2 = document.querySelector("#p2");
+
+            /* Styla med 3-4 CSS egenskaper */
+            elementP1.style.color = "green";
+            elementP1.style.backgroundColor = "red";
+            elementP1.style.fontSize = "18px";
+            elementP1.style.textShadow = "1px 1px 2px #FFF";
+            elementP2.style.color = "green";
+            elementP2.style.backgroundColor = "red";
+            elementP2.style.fontSize = "18px";
+            elementP2.style.textShadow = "1px 1px 2px #FFF";
+        }
+    </script>
+</body>
+</html>
