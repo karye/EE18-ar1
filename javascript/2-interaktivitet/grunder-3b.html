@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Grunder i Javascript</title>
+    <script src="//cdn.rawgit.com/gibbok/animatelo/1.0.3/dist/animatelo.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Grunder i Javascript</h1>
+        <p>Det här är llite skoj!</p>
+
+        <button onclick="hoppa()">Klicka på mig!</button>
+    </div>
+    <script>
+        function hoppa() {
+            window.animatelo.bounce('h1');
+            window.animatelo.slideOutUp('p');
+        }
+    </script>
+</body>
+</html>
