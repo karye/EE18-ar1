@@ -108,3 +108,14 @@ body {
     background: #000;
     color: #FFF;
 }
+
+.kontainer i.fa {
+    cursor: pointer;
+    display: block;
+}
+.kontainer .dold {
+    display: none;
+}
+.kontainer .synlig {
+    display: block;
+}
