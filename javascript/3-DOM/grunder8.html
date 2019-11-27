@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arbeta med DOM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="kontainer kol3">
+        <img id="foto1" src="./foton/photo-1574707700264-fd4c9aa60852.jpg" alt="Gran">
+        <img id="foto2" src="./foton/photo-1574745529486-2abeed35edbd.jpg" alt="Fiskar">
+        <img id="foto3" src="./foton/photo-1574790060676-507222f4b05c.jpg" alt="Höst">
+
+        <button onclick="blink1()">Starta blink</button>
+    </div>
+    <script>
+        /* element vi skall arbeta med */
+        const elementFoto1 = document.querySelector("#foto1");
+        const elementFoto2 = document.querySelector("#foto2");
+        const elementFoto3 = document.querySelector("#foto3");
+
+        function blink1() {
+            setInterval(svartVit, 500);
+        }
+
+        function svartVit() {
+            elementFoto1.classList.toggle("gråskala");
+        }
+    </script>
+</body>
+</html>

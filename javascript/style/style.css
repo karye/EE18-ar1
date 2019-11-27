@@ -28,15 +28,15 @@ body {
     border: 1px solid;
 }
 .kol2 {
-    margin: 1em 0;
+    margin: 1em auto;
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-gap: 1em;
 }
 .kol3 {
-    margin: 1em 0;
+    margin: 1em auto;
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1em;
 }
 .kontainer label {
@@ -118,4 +118,11 @@ body {
 }
 .kontainer .synlig {
     display: block;
+}
+
+.kontainer .gråskala {
+    filter: grayscale(100%);
+}
+.kontainer .styrka {
+    filter: invert(75%);
 }
