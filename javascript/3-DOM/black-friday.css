@@ -1,0 +1,8 @@
+.slideInH {
+    transition: transform 2s;
+    transform: translateX(2000px);
+}
+.slideInV {
+    transition: transform 2s;
+    transform: translateX(-2000px);
+}

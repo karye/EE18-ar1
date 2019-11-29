@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Black Friday</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="./black-friday.css">
+</head>
+<body>
+    <div class="kontainer kol2">
+        <img id="foto1" class="animated dold" src="./foton/photo-1574707700264-fd4c9aa60852.jpg" alt="Gran">
+        <img id="foto2" class="animated dold" src="./foton/photo-1574745529486-2abeed35edbd.jpg" alt="Fiskar">
+    </div>
+    <script>
+        /* Element vi arbetar med */
+        const elementImg1 = document.querySelector("#foto1");
+        const elementImg2 = document.querySelector("#foto2");
+
+        /* Fördröjning */
+        setTimeout(visaBild, 500);
+        setTimeout(fadaBild1, 1000);
+        setTimeout(fadaBild2, 2000);
+
+        function visaBild() {
+            elementImg1.classList.remove("dold");
+            elementImg2.classList.remove("dold");
+        }
+
+        function fadaBild1() {
+            elementImg1.classList.add("slideInH");
+        }
+
+        function fadaBild2() {
+            elementImg2.classList.add("slideInV");
+        }
+
+        window.addEventListener('scroll', function() {
+            console.log(pageYOffset + 'px');
+        });
+        /* TODO testa flera animationer från alla håll. Testa även scroll*/
+    </script>
+</body>
+</html>
