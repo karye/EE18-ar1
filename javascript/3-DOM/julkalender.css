@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Parisienne');
+
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Styla kalendern */
+body {
+    background: url("./foton/rithika-gopalakrishnan-XdAfqygfuN0-unsplash.jpg");
+}
+.kontainer {
+    background: #902626;
+    width: 800px;
+    margin: auto;
+    font-family: 'Parisienne', cursive;
+    color: #FFF;
+    text-align: center;
+}
+h1 {
+    font-size: 80px;
+}
+.kalender {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 15px;
+    padding: 50px;
+    justify-content: space-around;
+}
+.ruta {
+    font-size: 30px;
+    background: #295a29;
+    width: 80px;
+    height: 80px;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition-duration: 1s;
+}
+.ruta:hover {
+    background: #459945 no-repeat center;
+    box-shadow: 0 0 10px #FFF;
+}
+
+.klapp1 {
+    font-size: 0;
+    background: url("./foton/klapp1.png") center;
+    background-size: 80px 80px;
+    animation: tona 5s;
+    pointer-events: none;
+}
+@keyframes tona {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

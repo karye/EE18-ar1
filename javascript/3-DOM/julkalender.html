@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Julkalender 2019</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="./julkalender.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Julkalender</h1>
+        <div class="kalender">
+            <div class="ruta animated dag1" onclick="öppnaDag1()">1</div>
+            <div class="ruta animated dag2">2</div>
+            <div class="ruta animated dag3">3</div>
+            <div class="ruta animated dag4">4</div>
+            <div class="ruta animated dag5">5</div>
+            <div class="ruta animated dag6">6</div>
+            <div class="ruta animated dag7">7</div>
+            <div class="ruta animated dag8">8</div>
+            <div class="ruta animated dag9">9</div>
+            <div class="ruta animated dag10">10</div>
+            <div class="ruta animated dag11">11</div>
+            <div class="ruta animated dag12">12</div>
+            <div class="ruta animated dag13">13</div>
+            <div class="ruta animated dag14">14</div>
+            <div class="ruta animated dag15">15</div>
+            <div class="ruta animated dag16">16</div>
+            <div class="ruta animated dag17">17</div>
+            <div class="ruta animated dag18">18</div>
+            <div class="ruta animated dag19">19</div>
+            <div class="ruta animated dag20">20</div>
+            <div class="ruta animated dag21">21</div>
+            <div class="ruta animated dag22">22</div>
+            <div class="ruta animated dag23">23</div>
+            <div class="ruta animated dag24">24</div>
+        </div>
+    </div>
+    <script>
+        /* Element vi arbetar med */
+        const elementDag1 = document.querySelector(".dag1");
+
+        function öppnaDag1() {
+            elementDag1.classList.toggle("fadeOut");
+            elementDag1.classList.toggle("klapp1");
+        }
+    </script>
+</body>
+</html>
