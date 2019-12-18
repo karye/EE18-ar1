@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Image slider</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="./image-slider.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Bildgalleri</h1>
+        <div class="bildRuta">
+            <i onclick="föreBild()" class="fa fa-arrow-circle-left"></i>
+            <img src="./foton/foto1.jpg" alt="Foton">
+            <i onclick="nästaBild()" class="fa fa-arrow-circle-right"></i>
+            <br>
+            <label class="switch">
+                <input type="checkbox">
+                <span onclick="play()" class="slider round"></span>
+            </label>
+        </div>
+    </div>
+    <script defer src="./image-slider.js"></script>
+</body>
+</html>
