@@ -15,7 +15,7 @@ body {
     background: #F9F6EB;
 }
 .kontainer {
-    width: 600px;
+    width: 700px;
     padding: 2em;
     margin: 3em auto;
     background: #fff;
@@ -96,6 +96,10 @@ body {
     border-radius: 3px;
     margin-top: 0;
     margin-bottom: 0;
+}
+.kontainer p.resultat {
+    background: #ececec;
+    padding: 10px;
 }
 .kontainer img {
     width: 100%;

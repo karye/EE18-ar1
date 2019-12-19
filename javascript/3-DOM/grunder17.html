@@ -16,7 +16,7 @@
         <button onclick="gissa()">Skicka</button>
 
         <h2>Output</h2>
-        <p>Resultat</p>
+        <p class="resultat">Resultat</p>
     </div>
     <script>
         /* Element vi skall arbeta med */
@@ -32,7 +32,7 @@
         var summa = tal1 + tal2;
 
         /* Presentera frågan i label-elementet */
-        elementLabel.textContent = "Vad är " + tal1 + " + " + tal2 + "?"
+        elementLabel.textContent = "Vad är " + tal1 + " + " + tal2 + "?";
 
         function gissa() {
             /* Läs av gissningen */
@@ -47,6 +47,8 @@
                 elementResultat.textContent = "Fel svar!";
             }
         }
+        /* TODO
+            1. Slumpa fram bilder */
     </script>
 </body>
 </html>

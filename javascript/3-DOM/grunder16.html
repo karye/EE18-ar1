@@ -16,7 +16,7 @@
         <button onclick="omvandla()">Skicka</button>
 
         <h2>Output</h2>
-        <p>Resultat</p>
+        <p class="resultat">Resultat</p class="resultat">
         <meter min="0" max="200" low="50" high="150" optimum="100" value="0"></meter>
     </div>
     <script>
@@ -36,6 +36,8 @@
             elementResultat.textContent = farenheit;
             elementMeter.value = farenheit;
         }
+
+        /* TODO 1. Lägg till bilder för olika temperatur: kallt, lagom, varmt osv */
     </script>
 </body>
 </html>
