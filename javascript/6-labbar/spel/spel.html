@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Närdådå spelet</title>
+    <title>När då då? spelet</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./spel.css">
 </head>
@@ -14,15 +14,17 @@
         <h3>Frågan</h3>
         <textarea cols="30" rows="10"></textarea>
 
-        <label>Gissa årtalet</label>
-        <input type="text">
-        <button>Skicka</button>
+        <h3>Gissa årtalet</h3>
+        <input id="årtal" type="text">
+        <button id="skicka">Skicka</button>
+
+        <h3>Poäng</h3>
+        <input id="poäng" type="text" readonly>
 
         <h3>Svar</h3>
-        <i class="fa fa-thumbs-up"></i>
-        <i class="fa fa-thumbs-down"></i>
-        <button>Nästa fråga >></button>
-
+        <i id="upp" class="fa fa-thumbs-up"></i>
+        <i id="ned" class="fa fa-thumbs-down"></i>
+        <button id="nästa">Nästa fråga >></button>
     </div>
     <script defer src="./spel.js"></script>
 </body>
