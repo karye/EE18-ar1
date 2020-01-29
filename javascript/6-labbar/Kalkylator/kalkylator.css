@@ -20,3 +20,6 @@ body {
 .bredd3 {
     grid-column: span 3;
 }
+#fönster {
+    text-align: right;
+}

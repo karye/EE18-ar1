@@ -2,46 +2,65 @@
 const elementFönster = document.querySelector("#fönster");
 const elementKol4 = document.querySelector(".kol4");
 
+/* Globala variabler */
+var resultat = "",
+    operation = "",
+    minne = 0;
+
 elementKol4.addEventListener("click", tryck);
+
 function tryck(event) {
 
     if (event.target.tagName == "BUTTON") {
         console.log(event.target.textContent);
-        
-        switch (event.target.textContent) {
-            case "0":
-                elementFönster.value = event.target.textContent;
+
+        switch (event.target.dataset.meta) {
+            case "C":
+                resultat = "";
                 break;
-            case "1":
-                elementFönster.value = event.target.textContent;
+
+            case "tal":
+                if (operation) {
+                    resultat = "";
+                }
+                resultat += event.target.textContent;
                 break;
-            case "2":
-                elementFönster.value = event.target.textContent;
+
+            case "+":
+                minne = Number(resultat);
+                operation = "+";
                 break;
-            case "3":
-                elementFönster.value = event.target.textContent;
+            case "-":
+                minne = Number(resultat);
+                operation = "-";
                 break;
-            case "4":
-                elementFönster.value = event.target.textContent;
+            case "*":
+                minne = Number(resultat);
+                operation = "*";
                 break;
-            case "5":
-                elementFönster.value = event.target.textContent;
+            case "/":
+                minne = Number(resultat);
+                operation = "/";
                 break;
-            case "6":
-                elementFönster.value = event.target.textContent;
-                break;
-            case "7":
-                elementFönster.value = event.target.textContent;
-                break;
-            case "8":
-                elementFönster.value = event.target.textContent;
-                break;
-            case "9":
-                elementFönster.value = event.target.textContent;
-                break;
-        
-            default:
+            case "=":
+                operation = "";
+                switch (operation) {
+                    case "+":
+                        resultat = minne + Number(resultat);
+                        break;
+                    case "-":
+                        resultat = minne - Number(resultat);
+                        break;
+                    case "*":
+                        resultat = minne * Number(resultat);
+                        break;
+                    case "/":
+                        resultat = minne / Number(resultat);
+                        break;
+                }
                 break;
         }
+
+        elementFönster.value = resultat;
     }
 }
