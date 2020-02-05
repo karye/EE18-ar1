@@ -1,0 +1,22 @@
+body {
+    background: #F9F6EB url("./bilder/jacques-bopp-wtzOhxEX4WU-unsplash.jpg");
+    background-size: 1300px;
+    background-attachment: fixed;
+}
+.kontainer {
+    width: 500px;
+    padding: 2em;
+    margin: 3em auto;
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 12px #f0e9d1;
+}
+.kontainer fieldset {
+    border: 3px solid #CCC;
+    border-radius: 5px;
+    padding: 0 0 10px 20px;
+}
+.kontainer legend, .kontainer select, .kontainer input {
+    width: auto;
+}
