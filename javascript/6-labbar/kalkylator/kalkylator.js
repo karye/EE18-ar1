@@ -10,7 +10,6 @@ var resultat = "",
 elementKol4.addEventListener("click", tryck);
 
 function tryck(event) {
-
     if (event.target.tagName == "BUTTON") {
         console.log(event.target.textContent);
 
