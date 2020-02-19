@@ -1,6 +1,6 @@
 body {
     background: #F9F6EB url("./bilder/jacques-bopp-wtzOhxEX4WU-unsplash.jpg");
-    background-size: 1300px;
+    background-size: cover;
     background-attachment: fixed;
 }
 .kontainer {
