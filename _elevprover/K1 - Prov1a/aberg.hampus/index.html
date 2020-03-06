@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Prov 1a Javascript</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="box" class="kontainer">
+        <h1 id="rubrik">The Winner Takes It All</h1>
+        <p id="text">
+            The winner takes it all<br>
+            The loser standing small<br>
+            Beside the victory<br>
+            That's her destiny
+        </p>
+        <button onclick="rubrik()">Styla rubriken</button>
+        <button onclick="text()">Styla texten</button>
+        <button onclick="box()">Styla boxen</button>
+    </div>
+    <script>
+        function rubrik() {
+
+            // Hitta element
+            const elementRubrik = document.querySelector("#rubrik")
+
+
+            // Be om en färg
+            var colorInputH1 = prompt("Välj en färg")
+
+            // Ändra färg på rubriken
+            if (colorInputH1 == "black") {
+                elementRubrik.style.cssText = "color: black";
+            } else {
+                if (colorInputH1 == "blue") {
+                    elementRubrik.style.cssText = "color: blue";
+                } else {
+                    if (colorInputH1 == "red") {
+                        elementRubrik.style.cssText = "color: red";
+                    } else {
+                        if (colorInputH1 == "yellow") {
+                            elementRubrik.style.cssText = "color: yellow";
+                        } else {
+                            alert("Valj någon av dom här färgerna: black, blue, red, yellow")
+                        }
+                    }
+                }
+            }
+        }
+
+        function text() {
+
+            // Hitta element
+            const elementText = document.querySelector("#text")
+
+
+            // Be om en färg
+            var colorInputText = prompt("Välj en färg")
+
+            // Ändra färg på texten
+            if (colorInputText == "black") {
+                elementText.style.cssText = "color: black";
+            } else {
+                if (colorInputText == "blue") {
+                    elementText.style.cssText = "color: blue";
+                } else {
+                    if (colorInputText == "red") {
+                        elementText.style.cssText = "color: red";
+                    } else {
+                        if (colorInputText == "yellow") {
+                            elementText.style.cssText = "color: yellow";
+                        } else {
+                            alert("Valj någon av dom här färgerna: black, blue, red, yellow")
+                        }
+                    }
+                }
+            }
+        }
+
+        function box() {
+            // Hitta text elementet
+            const elementText = document.querySelector("#text")
+
+            // Göm texten
+            elementText.hidden = true;
+
+            // Gör så att bakgrunden blinkar
+            setInterval(boxChange, 500);
+        }
+
+        function boxChange() {
+            const elementBox = document.querySelector(".kontainer")
+            elementBox.classList.toggle("box")
+            
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Prov 1a Javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1 id="h1">The Winner Takes It All</h1>
+        <p id="p1">
+            The winner takes it all<br>
+            The loser standing small<br>
+            Beside the victory<br>
+            That's her destiny
+        </p>
+
+        <button id="b1" onclick="stylaRubrik()">Styla rubriken</button>
+        <button id="b2" onclick="stylaText()">Styla texten</button>
+        <button id="b3" onclick="blinkaBox()">Blinka boxen</button>
+    </div>
+    <script>
+        function stylaRubrik() {
+            const elementH1 = document.querySelector("#h1");
+            
+            elementH1.style.cssText = "color: red";
+            
+        }
+        function stylaText() {
+            const elementP1 = document.querySelector("#p1");
+            färg = prompt("Skriv in en färg");
+            elementP1.style.cssText = "color: yellow";
+        }
+
+
+        function blinkaBox() {
+            const elementKontainer = document.querySelector(".kontainer");
+            const elementP1 = document.querySelector("#p1");
+            
+            elementP1.hidden = true;
+            setInterval(blinkaBox, 500)
+            elementKontainer.style.cssText = "background: yellow"
+        }
+
+
+    </script>
+</body>
+</html>

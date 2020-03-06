@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One|Comfortaa|Fascinate+Inline&display=swap');
+
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url("../img/bg.jpg");
+    background-size: 2000px;
+}
+.kontainer {
+    width: 800px;
+    padding: 100px;
+    margin: 100px auto;
+    background: #f866a3;
+    background-size: 100%;
+    font-family: sans-serif;
+    border-radius: 200px;
+    font-family: 'Fredoka One', cursive;
+    box-shadow: 5px 5px 16px 1px black;
+    color: #FFF;
+}
+h1, h2 {
+    font-family: 'Fascinate Inline', cursive;
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-size: 40px;
+}
+label {
+    margin: 10px;
+    width: 30px;
+    display: inline-block;
+}
+input, button {
+    padding: 10px;
+    border-radius: 20px;
+    border: 10px solid #f8ee66;
+    background: #FFF;
+    cursor: pointer;
+}
+.listor {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+}
+p {
+    padding: 10px;
+    border-radius: 3px;
+    font-style: italic;
+    font-size: 35px;
+    margin: 20px 0;
+}
+
+.box {
+    border-radius: 0px;
+    background: yellow;
+}

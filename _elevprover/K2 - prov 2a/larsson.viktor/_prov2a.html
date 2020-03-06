@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Prov 2a</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="prov2a.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Inköpslista</h1>
+        <h2>Input</h2>
+        <div class="grid">
+            <label for="vara">Vara</label>
+            <input autofocus class="form-control" id="vara" type="text">
+            <label for="pris">Pris</label>
+            <input class="form-control" id="pris" type="text">
+            <br><button class="btn btn-secondary">Lägg till</button>
+        </div>
+        <h2>Output</h2>
+        <div class="grid">
+            <h5>Små inköp (&lt;100:-)</h5>
+            <h5>Stora inköp (&gt;100:-)</h5>
+            <p class="lista1"></p>
+            <p class="lista2"></p>
+            <h5>Summa</h5>
+            <h5>Summa</h5>
+            <p class="total total1"></p>
+            <p class="total total2"></p>
+        </div>
+    </div>
+    <script defer src="prov2a.js"></script>
+</body>
+</html>
