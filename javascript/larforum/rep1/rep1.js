@@ -29,10 +29,10 @@ elementSkicka.addEventListener("click", function() {
         antal = "två";
     }
     if (antal > 2) {
-        antal = "två";
+        antal = "tre";
     }
 
-    elementOutput.innerHTML = "Doktorn säger: <strong>" + antal + " " + frukt + "</strong> om dagen håller honom borta!";
+    elementOutput.innerHTML = "Doktorn säger: <strong>" + antal + " " + frukt + "</strong> om dagen håller doktorn borta!";
 });
 
 /* Vad händer när man klickar på knappen Radera */
