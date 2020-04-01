@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Canvas</title>
+    <link rel="stylesheet" href="./canvas.css">
+</head>
+<body>
+    <canvas></canvas>
+    <script>
+        /* Element vi jobbar med */
+        const eCanvas = document.querySelector("canvas");
+
+        /* Ställ in bredd och höjd på canvas */
+        eCanvas.width = 1300;
+        eCanvas.height = 1000;
+
+        /* Aktivera ritmotorn */
+        var ctx = eCanvas.getContext("2d");
+
+        /* Välj en fyllnadsfärg */
+        ctx.fillStyle = "black";
+        ctx.font = "24px sans-serif";
+
+        /* Rita schakbrädens kanter */
+        ctx.strokeRect(100, 100, 800, 800);
+
+        /* Första raden börjar på 200 */
+        for (var x = 200; x <= 900; x += 200) {
+            ctx.fillRect(x, 100, 100, 100);
+        }
+        /* Andra raden börjar på 100 */
+        for (var x = 100; x <= 800; x += 200) {
+            ctx.fillRect(x, 200, 100, 100);
+        }
+        for (var x = 200; x <= 900; x += 200) {
+            ctx.fillRect(x, 300, 100, 100);
+        }
+        for (var x = 100; x <= 800; x += 200) {
+            ctx.fillRect(x, 400, 100, 100);
+        }
+        for (var x = 200; x <= 900; x += 200) {
+            ctx.fillRect(x, 500, 100, 100);
+        }
+        for (var x = 100; x <= 800; x += 200) {
+            ctx.fillRect(x, 600, 100, 100);
+        }
+        for (var x = 200; x <= 900; x += 200) {
+            ctx.fillRect(x, 700, 100, 100);
+        }
+        for (var x = 100; x <= 800; x += 200) {
+            ctx.fillRect(x, 800, 100, 100);
+        }
+
+        /* Skriv ut siffror horisontellt */
+        var tal = 65; // ASCII för "A"
+        for (var x = 145; x <= 900; x += 100) {
+            /* Plockar fram motsvarande tecken enligt ASCII-tabellen */
+            var bokstav = String.fromCharCode(tal);
+            /* Skriver ut */
+            ctx.fillText(bokstav, x, 80);
+            /* Räknar upp till nästa */
+            tal++;
+        }
+        /* Skriv ut siffror vertikalt */
+        var siffra = 1;
+        for (var y = 155; y <= 900; y += 100) {
+            ctx.fillText(siffra, 60, y);
+            siffra++;
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Canvas</title>
+    <link rel="stylesheet" href="./canvas.css">
+</head>
+<body>
+    <canvas></canvas>
+    <script>
+        /* Element vi jobbar med */
+        const eCanvas = document.querySelector("canvas");
+
+        /* Ställ in bredd och höjd på canvas */
+        eCanvas.width = 1300;
+        eCanvas.height = 1000;
+
+        /* Aktivera ritmotorn */
+        var ctx = eCanvas.getContext("2d");
+
+        /* Välj en fyllnadsfärg */
+        ctx.fillStyle = "black";
+        ctx.font = "24px sans-serif";
+
+        /* Slumpa fram ett tal 0.000.. - 0.99999..*/
+        var x = Math.random();
+        console.log(x);
+
+        var y = Math.random() * 10;
+        console.log(y);
+
+        /* Slumptal 1-10 */
+        var i = Math.ceil(Math.random() * 10);
+        console.log(i);
+
+        /* Slumptal 1-10 */
+        var j = Math.ceil(Math.random() * 100);
+        console.log(j);
+
+        /* Slumpa fram en fyrkant */
+        var x = Math.ceil(Math.random() * 800);
+        console.log(x);
+        ctx.fillRect(x, 100, 50, 50);
+
+        /* Slumpa fram en fyrkant någonstans på canvas */
+        var x = Math.ceil(Math.random() * 800);
+        var y = Math.ceil(Math.random() * 600);
+        ctx.fillRect(x, y, 50, 50);
+
+        /* Sudda ut canvas */
+        ctx.clearRect(0, 0, 1300, 1000);
+
+        /* Slumpa fram 10 fyrkanten någonstans på canvas */
+        ctx.fillStyle = "#ff99db80"; // Halvtransparent färg
+        for (var i = 0; i <= 10; i++) {
+            var x = Math.ceil(Math.random() * 800);
+            var y = Math.ceil(Math.random() * 600);
+            ctx.fillRect(x, y, 50, 50);
+        }
+        ctx.clearRect(0, 0, 1300, 1000);
+
+        /* Slumpa fram 100 fyrkanten någonstans på canvas */
+        for (var i = 0; i <= 100; i++) {
+            var x = Math.ceil(Math.random() * 800);
+            var y = Math.ceil(Math.random() * 600);
+            ctx.fillRect(x, y, 50, 50);
+        }
+        ctx.clearRect(0, 0, 1300, 1000);
+
+        /* Slumpa fram 100 olika stora fyrkanter */
+        for (var i = 0; i <= 100; i++) {
+            var x = Math.ceil(Math.random() * 800);
+            var y = Math.ceil(Math.random() * 600);
+            var w = Math.ceil(Math.random() * 50);
+            ctx.fillRect(x, y, w, w);
+        }
+        ctx.clearRect(0, 0, 1300, 1000);
+
+        /* Skapa en natthimmel: olika stora stjärnor mot en svart bakgrund */
+        ctx.fillStyle = "black";
+        ctx.fillRect(0, 0, 1300, 1000);
+        ctx.fillStyle = "white";
+        for (var i = 0; i <= 200; i++) {
+            ctx.beginPath();
+            var x = Math.ceil(Math.random() * 1300);
+            var y = Math.ceil(Math.random() * 1000);
+            var r = Math.ceil(Math.random() * 5);
+            ctx.arc(x, y, r, 0, Math.PI * 2);
+            ctx.fill();
+        }
+
+    </script>
+</body>
+</html>
