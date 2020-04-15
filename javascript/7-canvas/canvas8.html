@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Canvas</title>
+    <link rel="stylesheet" href="./canvas.css">
+</head>
+<body>
+    <div class="kol2">
+        <canvas></canvas>
+        <div>
+            <h1>Flytta Mario</h1>
+            <div class="kol3">
+                <br><button id="up">&Uparrow;</button><br>
+                <button id="left">&Leftarrow;</button><br><button id="right">&Rightarrow;</button>
+                <br><button id="down">&Downarrow;</button><br>
+            </div>
+        </div>
+    </div>
+    <script>
+        /* Element vi jobbar med */
+        const eCanvas = document.querySelector("canvas");
+        const eUp = document.querySelector("#up");
+        const eLeft = document.querySelector("#left");
+        const eRight = document.querySelector("#right");
+        const eDown = document.querySelector("#down");
+
+        /* Ställ in bredd och höjd på canvas */
+        eCanvas.width = 1200;
+        eCanvas.height = 1000;
+        var ctx = eCanvas.getContext("2d");
+
+        /* Ladda in bilden */
+        var mario = new Image();
+        mario.src = "./mario.png";
+
+        /* Kicka igång animationsloopen */
+        loopen();
+
+        /* ********** */
+        /* Funktioner */
+        /* ********** */
+
+        /* Rita ut bilden */
+        var x = 100, y = 100;
+        function ritaMario() {
+            ctx.drawImage(mario, x, y);
+        }
+            
+        /* Animationsloopen */
+        function loopen() {
+            /* Sudda ut hela canvas */
+            ctx.clearRect(0, 0, 1200, 1000);
+
+            /* Rita ut mario */
+            ritaMario();
+
+            requestAnimationFrame(loopen);
+        }
+
+        /* Lyssna på input */
+        eRight.addEventListener("click", function() {
+            /* Öka med 3 */
+            x += 3;
+        });
+        eDown.addEventListener("click", function() {
+            y += 3;
+        })
+        eLeft.addEventListener("click", function() {
+            /* Minska med 3 */
+            x -= 3;
+        });
+        eUp.addEventListener("click", function() {
+            y -= 3;
+        })
+    </script>
+</body>
+</html>
