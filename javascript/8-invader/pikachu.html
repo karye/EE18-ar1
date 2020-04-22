@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Canvas</title>
+    <link rel="stylesheet" href="./pikachu.css">
+</head>
+<body>
+    <canvas></canvas>
+    <script>
+        /* ****************************** */
+        /*        Ställ in canvas         */
+        /* ****************************** */
+        const eCanvas = document.querySelector("canvas");
+        eCanvas.width = 1200;
+        eCanvas.height = 1000;
+        var ctx = eCanvas.getContext("2d");
+
+        /* ****************************** */
+        /*    Variabler och objekt        */
+        /* ****************************** */
+
+        /* ****************************** */
+        /*            Funktioner          */
+        /* ****************************** */
+        function ritaFigur(x, y) {
+            ctx.fillStyle = "pink";
+            ctx.fillRect(x, y, 50, 50);
+        }
+
+        /* Animationsloopen */
+        function loopen() {
+            ritaFigur(200, 200);
+
+            requestAnimationFrame(loopen);
+        }
+
+        /* ****************************** */
+        /*     Starta animationsloopen    */
+        /* ****************************** */
+        loopen();
+    </script>
+</body>
+</html>
