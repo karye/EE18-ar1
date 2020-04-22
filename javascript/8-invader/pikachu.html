@@ -21,20 +21,30 @@
         /*    Variabler och objekt        */
         /* ****************************** */
 
-        /* Pikachu figuren */
+        /* Pikachu */
         var pikachu = {
             x: Math.random() * 1200,
             y: 0,
             bild: new Image()
         }
+        var desura = {
+            x: Math.random() * 1200,
+            y: 0,
+            bild: new Image()
+        }
+
         /* Laddar in bilderna */
         pikachu.bild.src = "./ikoner/icons8-pikachu-pokemon-50.png";
+        desura.bild.src = "./ikoner/icons8-desura-50.png";
 
         /* ****************************** */
         /*            Funktioner          */
         /* ****************************** */
         function ritaPikachu() {
             ctx.drawImage(pikachu.bild, pikachu.x, pikachu.y);
+        }
+        function ritaDesura() {
+            ctx.drawImage(desura.bild, desura.x, desura.y);
         }
 
         /* Animationsloopen */
@@ -44,6 +54,9 @@
 
             pikachu.y += 5;
             ritaPikachu();
+
+            desura.y += 4;
+            ritaDesura();
 
             requestAnimationFrame(loopen);
         }
