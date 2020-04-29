@@ -1,11 +1,12 @@
 /* 
-1. Välj ett slumpat stad
-2. Läs av användarens gissning
-3. (Avsluta om användaren vill)
-4. (Kontrollera att användaren matat in en bokstav)
-5. (Håll koll vilka bokstäver användaren gissat)
-6. Visa resultat, dvs hur mycket av ordet som gissats
-7. Avsluta om man gissat hela ordet = vinner!
+** Välj ett slumpat stad från en array[]
+** Läs av användarens gissning
+** Kontrollera att användaren matat in en bokstav
+** Håll koll vilka bokstäver användaren gissat
+** Visa resultat, dvs hur mycket av ordet som gissats
+** Rita hänga-gubbe om man gissar fel
+** Avsluta med "Game Over" om man ritat hela gubben
+** Om man gissat hela ordet = vinner!
 */
 
 /* Förbereder canvas */
@@ -225,25 +226,27 @@ var index = Math.floor(Math.random() * stader.length);
 console.log(index);
 
 /* Plocka ut staden på det indexet */
-var slumpadStad = stader[index];
+var slumpadStad = Array.from(stader[index]);
 console.log(slumpadStad);
 
 /* Variabel för att lagra felgissningar */
 var fel = 0;
 
 /* Variabel för att lagra resultatet */
-var resultat = "";
+var resultat = [];
 
 /* Fyll resultat med '_' */
 for (var i = 0; i < slumpadStad.length; i++) {
-    resultat += "_ ";
+    resultat[i] = "_";
 }
 
 /* 2. Läs av användarens gissning */
 /* När användaren trycker på knappen, läs av gissningen */
 eKnapp.addEventListener("click", function() {
-    var gissning = eBokstav.value;
-    console.log(gissning);
+    console.log(slumpadStad);
+    
+    var gissadBokstav = eBokstav.value;
+    console.log(gissadBokstav);
 
     /* Flagga för att komma ihåg om man gissat rätt */
     var rättGissat = false;
@@ -257,14 +260,22 @@ eKnapp.addEventListener("click", function() {
         var slumpadBokstav = slumpadStad[i].toLowerCase();
 
         /* Kolla om gissning finns i staden */
-        if (gissning == slumpadBokstav) {
-            console.log("Bokstav hittad", gissning);
-            resultat += gissning + " ";
+        if (gissadBokstav == slumpadBokstav) {
+            console.log("Bokstav hittad", gissadBokstav);
+
+            /* Registrera hittad bokstav */
+            resultat[i] = gissadBokstav;
+
+            /* Ta bort hittad bokstav */
+            slumpadStad[i] = '_';
+
+            /* Notera att gissning funkade */
             rättGissat = true;
         }
     }
 
     console.log("rättgissat =", rättGissat);
+
     /* Räkna upp felen om man inte gissat rätt */
     if (rättGissat == false) {
         fel++;
@@ -273,6 +284,12 @@ eKnapp.addEventListener("click", function() {
 
     /* Skriv ut resultatet */
     eResultat.value = resultat;
+
+    /* Resultatet inte innehåller '_' längre, har man vunnit! */
+    if (!resultat.includes('_')) {
+        ctx.font = " bold 40px sans-serif";
+        ctx.fillText("Du har vunnit!", 50, 200);
+    }
 
     /* Rita ut hänga gubbe om det blev fel */
     /* Första felet, rita marken */
