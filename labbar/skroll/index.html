@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sida">
+        <ul>
+            <li class="scrollElement" data-rate="-1" data-orientation="v">Par</li>
+            <li>al</li>
+            <li class="scrollElement" data-rate="-2" data-orientation="v">lax</li>
+        </ul>
+        <span class="scrollElement" data-rate="2" data-orientation="h"></span>
+    </div>
+    <div class="sida">
+        <img src="./bilder/the-ian-idGTdKqMsiw-unsplash.jpg" alt="Blomma">
+    </div>
+    <script>
+        /* Element vi använder */
+        const eTargets = document.querySelectorAll(".scrollElement"); // Är en lista
+
+        /* Lyssna på om man skrollar (scroll-händelsen) */
+        window.addEventListener("scroll", function (e) {
+
+            /* Hur långt skrollar man? */
+            console.log(window.pageYOffset);
+
+            /* Flytta alla element: en efter en i en loop */
+            eTargets.forEach(function (element) {
+                /* Läs av data-rate för elementet */
+                var rate = element.dataset.rate;
+                var orientation = element.dataset.orientation;
+
+                if (orientation == "v") {
+                    /* Räkna en förflyttning */
+                    var distance = window.pageYOffset * rate;
+
+                    /* Flytta på elementen */
+                    element.style.transform = "translateY(" + distance + "px)";
+                } else {
+                    /* Räkna en förflyttning */
+                    var distance = window.pageYOffset * rate;
+
+                    /* Flytta på elementen */
+                    element.style.transform = "translate3d(" + distance + "px, " + window.pageYOffset + "px, 0px)";
+                }
+            });
+        });
+    </script>
+</body>
+</html>
